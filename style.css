@@ -8,35 +8,24 @@ html,body{
     width: 100%;
     
 }
-body{
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(130, 125, 125);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: darkgrey;
 }
-#container{
-    height: 200px;
-    width: 150px;
+.cursor{
+    height: 20px;
+    width: 20px;
     background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-
-}
-#container img{
-    height: 100%;
-    width: 100%;
-    object-fit:cover ;
-    object-position: center;
-
-}
-#container i{
-    color: rgb(235, 7, 7);
-    font-size: 60px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0);
+    mix-blend-mode: difference;
+    border-radius: 50%;
     position: absolute;
-    opacity: 0;
-    transition: all ease 0.4s;
+    transition: all linear 0.2s;
+}
+h1{
+    font-size: 9vw;
+    font-weight: 900;
 }

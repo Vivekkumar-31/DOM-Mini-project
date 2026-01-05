@@ -1,17 +1,9 @@
-var con = document.querySelector('#container')
-var love = document.querySelector('i')
+var main = document.querySelector('#main')
+var crsr = document.querySelector('.cursor')
 
-con.addEventListener('dblclick',function(){
-   love.style.transform = 'translate(-50%,-50%) scale(1)'
-   love.style.opacity   = 0.8
-
-   setTimeout(function(){
-     love.style.opacity   = 0;
-   },1000);
-   setTimeout(function(){
-     love.style.transform = 'translate(-50%,-50%) scale(0)'
-   },2000);
-
+main.addEventListener('mousemove',function(elems){
+  crsr.style.left = elems.x+'px'
+  crsr.style.top = elems.y+'px'
 })
 
 
